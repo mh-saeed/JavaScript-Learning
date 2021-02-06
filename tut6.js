@@ -27,7 +27,7 @@ console.log(paragraph.charAt(22));
 console.log(paragraph.endsWith(`Pakistan`));
 console.log(paragraph.includes(`is`));
 console.log(paragraph.substring(0, 25)); // (from index, to index)
-console.log(paragraph.slice(0, 5)); // first parameter is from which index should sliceing will start and 2nc parameter is for how many character should be sliced and slice(-4) will return last 4 characters of strings and slice(4) will remove for characters of string from starting point
+console.log(paragraph.slice(0, 5)); // first parameter is from which index should sliceing will start and 2nd parameter is for how many character should be sliced and slice(-4) will return last 4 characters of strings and slice(4) will remove for characters of string from starting point. (slice will return characters from string)
 
 console.log(paragraph.split(` `)); // split(`any character present in string`)
 console.log(paragraph.replace(`I'm`, `I am`));
