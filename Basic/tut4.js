@@ -34,11 +34,11 @@ console.log(`My data type is ` + typeof unDef);
 
 // Refrence datatyps
 //     Arrays
-let arrayVar = [1,2,4,3,5,true,`hyderabad`] ;
+let arrayVar = [1, 2, 4, 3, 5, true, `hyderabad`];
 console.log(`My data type is ` + typeof arrayVar);
 
 //Object literals
-let stdMarks={
+let stdMarks = {
     saeed: 75,
     moiz: 80,
     hassan: 81
@@ -46,8 +46,8 @@ let stdMarks={
 console.log(stdMarks);
 console.log(`My data type is ` + typeof stdMarks);
 
-function myname (pram) {
-    
+function myname(pram) {
+
 }
 console.log(`My data type is ` + typeof myname);
 

@@ -52,9 +52,9 @@ let myObj = {
 console.log(myObj.games());
 
 let arr = [`Saeed`, `Haris`, `Hassan`, `Moiz`];
-arr.forEach(function(element, index) {
+arr.forEach(function (element, index) {
     console.log(element, index)
-    
+
 });
 
 // Scope
@@ -62,7 +62,7 @@ arr.forEach(function(element, index) {
 //  let/const has block level scope!
 // var has function level scope!
 
-if(1){
+if (1) {
     let m = 1; // only accessible in block
     console.log(m);
 }
@@ -72,21 +72,21 @@ if(1){
 // var has function level scope(mean it will not be accessible ot of function) in function body
 
 
-if(1){
+if (1) {
     var n = 10; // gloabal scope 
     console.log(n);
 }
 console.log(n);
 
 function num(name) {
-    
+
     let n = 12; // only accessible in block
-    var t=100;
-    console.log(`Number in function body is: `,n);
+    var t = 100;
+    console.log(`Number in function body is: `, n);
     return `My name is ${name}`;
 
 }
-console.log(num(`Muhammad Saeed`),n);
+console.log(num(`Muhammad Saeed`), n);
 //console.log(t); // will generate error: "Uncaught ReferenceError: t is not defined"
 
 

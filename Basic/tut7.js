@@ -7,15 +7,15 @@ const mixed = [`str`, 32, [23, 12]];
 const arr = new Array(43, 123, 125, `Hassan`, `Saeed`, `Moiz`);
 
 console.log(arr);
-arr[0]=`Saeed`;
+arr[0] = `Saeed`;
 console.log(arr);
 
 console.log(marks);
 console.log(fruits);
 console.log(mixed);
 
-x=0;
-while (x<mixed.length) {
+x = 0;
+while (x < mixed.length) {
     console.log(mixed[x]);
     x++;
 }
@@ -40,25 +40,25 @@ console.log(marks);
 marks.shift(); // will remove from 0 index of an array
 console.log(marks);
 
-marks.splice(1,4); // will remove elements splice(from index, number of elements to be removed)
+marks.splice(1, 4); // will remove elements splice(from index, number of elements to be removed)
 console.log(marks);
 
 console.log(fruits);
 fruits.reverse();
 console.log(fruits);
 
-let marks2 = [25, 55,84,124];
+let marks2 = [25, 55, 84, 124];
 marks = marks.concat(marks2);
 console.log(marks);
 
 let myInfo = {
-    name:`Muhammad Saeed`,
-    age: 21 ,
+    name: `Muhammad Saeed`,
+    age: 21,
     uniName: `MUET`,
     rollNo: 123,
-    marks1: [22,334,455],
+    marks1: [22, 334, 455],
     deptName: `Software Eng:`
-    
+
 };
 console.log(myInfo);
 console.log(myInfo.name);

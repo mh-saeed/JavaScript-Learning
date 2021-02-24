@@ -35,10 +35,10 @@ console.log(paragraph.replace(`I'm`, `I am`));
 // Template literals
 
 let name = `Muhammad Saeed`;
-let country = `Pakistan`; 
+let country = `Pakistan`;
 let myHtml = `<p> Hello, My name is ${name} 
                 and I live in ${country}
                 </p>`;
-document.body.innerHTML= myHtml;
+document.body.innerHTML = myHtml;
 // document.getElementsByTagName("body")[0].innerHTML = myHtml;
 // document.write(myHtml);

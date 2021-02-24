@@ -11,52 +11,52 @@ let myAge = 21;
 if (age === `20`) {
     console.log(`age is 20 😠, type: string`);
 }
-else if (age == 19 ) {
+else if (age == 19) {
     console.log(`age is 19 😂`);
 }
-else if (age === 20 ) {
+else if (age === 20) {
     console.log(`age is 20 😍, type: number`);
 }
-else{
+else {
     console.log(`age is neither 20 nor 19 😢`);
 }
 
 if (typeof myAge !== `undefined`) {
-    console.log(`myAge is defined!`);    
+    console.log(`myAge is defined!`);
 } else {
-    console.log(`myAge is not defined!`);        
+    console.log(`myAge is not defined!`);
 }
 
 let doesDrive = true;
 
 
-if (myAge<18) {
-    console.log(`You are under-Age 😢`);     
+if (myAge < 18) {
+    console.log(`You are under-Age 😢`);
 }
-else if (doesDrive || myAge<18) {
-    console.log(`You can't Drive 😠`);    
-    
+else if (doesDrive || myAge < 18) {
+    console.log(`You can't Drive 😠`);
+
 }
-else if (doesDrive && myAge>=18) {
-    console.log(`You can Drive 🙂`);    
+else if (doesDrive && myAge >= 18) {
+    console.log(`You can Drive 🙂`);
 }
 
 // ternary operator
-console.log(myAge==21? `my age is 21`:`my age is not 21`)//myAge==='21'? `my age is 21`:`my age is not 21`
+console.log(myAge == 21 ? `my age is 21` : `my age is not 21`)//myAge==='21'? `my age is 21`:`my age is not 21`
 // (condition? if true display this: if false display this)
 
 //switch
 
 switch (myAge) {
     case 18:
-        console.log(`You can't Drive 😠`);    
+        console.log(`You can't Drive 😠`);
         break;
     case 17:
-    console.log(`You are under-Age 😢`);     
+        console.log(`You are under-Age 😢`);
         break;
 
     default:
-    console.log(`You can't Drive 😠`);    
+        console.log(`You can't Drive 😠`);
 
         break;
 }
