@@ -69,7 +69,7 @@ if (1) {
 // console.log(m); // will generate error: "Uncaught ReferenceError: m is not defined" because m is declared using let and let has block level scope
 
 // var has global scope in block e..g if condition
-// var has function level scope(mean it will not be accessible ot of function) in function body
+// var has function level scope(mean it will not be accessible out of function) in function body
 
 
 if (1) {
