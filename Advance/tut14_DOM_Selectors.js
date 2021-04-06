@@ -8,10 +8,11 @@
 // -------------------Single element selector-----------------------
 
 let element = document.getElementById(`form`); // will give element having id form 
-element = element.className; // will update the previous element value and then store's the class name of element with id form
-
+element = element.className; // will print the class name of the element
 
 element = document.getElementById("heading");
+element= element.childNodes;// will give child nodes of element
+element= element.parentNode;// will give parent nodes of element
 element.style.color = 'red';
 element.innerText = `Asalamualikum Pakistan`;
 element.innerHTML = `<p> How Are you?</p>`;
@@ -22,8 +23,10 @@ console.log(element.innerText);
 
 //----------------QuerySelector----------------------
 
-let sel = document.querySelector(`#form`);
-console.log(sel); // will give first form id element from document
+let sel = document.querySelector(`#form`);// will give the first element from html document having id form
+let sel = document.querySelector(`.form`);// will give the first element from html document having class child
+let sel = document.querySelector(`div`); // will give the first div element from html document
+console.log(sel); 
 
 
 //----------------------multi element selector-----------------------
