@@ -13,22 +13,24 @@ console.log(conf); */ //will give boolean value
 
 console.log(a);
 
-let d = window.document; 
-console.log(d);
+let d = window.document;
+console.log("DOM" + d);
 
-console.log(window.innerHeight); // will print height of window 
-console.log(window.innerWidth); // will print Width of window 
+console.log("innerHeight " + window.innerHeight); // will print inner height of window 
+console.log("innerWidth " + window.innerWidth); // will print inner Width of window 
+console.log("outerHeight " + window.outerHeight); // will print outer height of window 
+console.log("outerWidth " + window.outerWidth); // will print outer Width of window 
 
-console.log(window.scrollX); 
-console.log(window.scrollY);  
+console.log(window.scrollX);// will print value of how much you have scrolled the window in x-axis direction
+console.log(window.scrollY);//will print value of how much you have scrolled the window in y-axis direction
 
-console.log(window.location);
-console.log(`\n`, location.href);
+console.log(window.location);//will print location of the page/window in object
+console.log(`\n location.href `, location.href);//will print url of the page/window 
 console.log(`\n`, location.toString());
 
 
 console.log(`\n`, window.history);
-console.log(`\n`, location.toString());
+console.log(`\n`, location.toString());// will print location(url) of the page/window in string 
 
 // history.back() // one step backward
 // history.forward() // on step forward

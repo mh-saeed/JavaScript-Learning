@@ -17,7 +17,8 @@ function greeting(name, thank) {
 }
 greeting(myName, `Thanks for coming ❤️`);
 
-// if we do not 2nd passes argument while calling the function then the value for 2nd arg will be the declared value parameter . // function with obj literals
+// if we do not passes 2nd argument while calling the function then the value for 2nd arg will be the declared value parameter . 
+// function with obj literals
 
 function greet1(name, thank = `Thank You`) {
     let greet =
