@@ -5,8 +5,7 @@ element = element.querySelector(`.container`);
 
 console.log(element.childNodes); // will give a object having all elements including text and comments within slected element.
 console.log(element.childNodes[5].nodeName); // To access specific child node
-console.log(element.childNodes[5].nodeType); // To access specific child node
-
+console.log(element.childNodes[5].nodeType); // will give number which represent node types, list of number is given below
 /* Node Types
  1=Element
  2=Attribute
