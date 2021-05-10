@@ -1,7 +1,12 @@
 showNotes();
 
 let addBtn = document.getElementById("addBtn");
-addBtn.addEventListener("click", function (e) {
+addBtn.addEventListener("click", addNotes);
+
+let search = document.getElementById(`searchTxt`);
+search.addEventListener(`input`, searchNotes);
+
+function addNotes() {
   let addTxt = document.querySelector(`.addTxt`);
   let addTitle = document.querySelector(`.addTitle`);
   if (addTxt.value != "" && addTitle.value != "") {
@@ -25,8 +30,7 @@ addBtn.addEventListener("click", function (e) {
   } else {
     alert(`Text field is empty!`);
   }
-});
-
+}
 function showNotes() {
   let notes = localStorage.getItem("notes");
   if (notes == null) {
@@ -65,8 +69,7 @@ function deleteNote(index) {
   showNotes();
 }
 
-let search = document.getElementById(`searchTxt`);
-search.addEventListener(`input`, function () {
+function searchNotes() {
   let inputVal = search.value.toLowerCase();
   let noteCards = document.getElementsByClassName(`noteCard`);
 
@@ -83,4 +86,4 @@ search.addEventListener(`input`, function () {
       element.style.display = "none";
     }
   });
-});
+}
