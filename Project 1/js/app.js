@@ -25,7 +25,7 @@ function addNotes() {
     localStorage.setItem("notes", JSON.stringify(notesObj));
     addTxt.value = "";
     addTitle.value = "";
-    console.log(notesObj);
+    // console.log(notesObj);
     showNotes();
   } else {
     alert(`Text field is empty!`);
