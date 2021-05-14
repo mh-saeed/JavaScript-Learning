@@ -1,6 +1,6 @@
 //---------------------------------  Class # 5  ---------------------------------
 
-// type conersion and type coercion
+// type conversion and type coercion
 let myVar;
 myVar = 74;
 console.log(myVar, typeof myVar);
