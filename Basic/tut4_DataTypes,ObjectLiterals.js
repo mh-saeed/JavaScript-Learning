@@ -9,6 +9,8 @@ Data type in JavaScript
 
 // Primitive Data types
 // string
+
+// we can use typeof x or typeof(x) .
 let name = `Saeed`;
 console.log(`my name is ` + name);
 console.log(`My data type is ` + typeof name); // typeof method will tells us the the data type of variable
@@ -24,6 +26,9 @@ console.log(`Pakistan is ` + pakistan); // typeof method will tells us the the d
 console.log(`My data type is ` + typeof pakistan); // typeof method will tells us the the data type of variable
 
 // null
+/* The result of typeof null is "object" . That’s wrong. It is an officially recognized error
+in typeof , kept for compatibility. Of course, null is not an object. It is a special value with
+a separate type of its own. So, again, this is an error in the language. */
 let nullVar = null; // bogus return value
 console.log(`My data type is ` + typeof nullVar); // typeof method will tells us the the data type of variable
 

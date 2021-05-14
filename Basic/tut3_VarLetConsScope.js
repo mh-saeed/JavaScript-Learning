@@ -10,8 +10,32 @@ console.log(name1 + " " + my_name + " " + my_name1);
 /* 
 # Rule for creating variable
 1. Cannot start with number 
-2. Can start with numbers, letters, _, or $
+2. Can start with letters, _, or $
 3. Variable are case sensitive 
+*/
+
+/* 
+Ways to declare variable: 
+
+let user = 'John', age = 25, message = 'Hello';
+
+The multiline variant is a bit longer, but easier to read:
+
+let user = 'John';
+let age = 25;
+let message = 'Hello';
+
+Some people also define multiple variables in this multiline style:
+
+let user = 'John',
+age = 25,
+message = 'Hello';
+
+…Or even in the “comma-first” style:
+
+let user = 'John'
+, age = 25
+, message = 'Hello';
 */
 
 const m_name = `saeed`;

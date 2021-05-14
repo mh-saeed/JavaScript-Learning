@@ -1,4 +1,12 @@
 // String Functions
+
+/* 
+In JavaScript, there are 3 types of quotes.
+1. Double quotes: "Hello" .
+2. Single quotes: 'Hello' .
+3. Backticks: `Hello` . 
+*/
+
 const fname = `Muhammad`;
 const lname = `Saeed`;
 
