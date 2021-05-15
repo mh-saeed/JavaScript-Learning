@@ -1,6 +1,6 @@
 //---------------------------------  Class # 5  ---------------------------------
 
-// type conversion and type coercion
+// -------------------type conversion and type coercion-------------------
 let myVar;
 myVar = 74;
 console.log(myVar, typeof myVar);
@@ -16,6 +16,29 @@ let boolean1 = true;
 console.log(boolean1, typeof boolean1);
 let boolean2 = String(boolean1);
 console.log(boolean2, typeof boolean2);
+console.log(Boolean("hello")); // true
+console.log(Boolean("0")); // true
+console.log(Boolean(" ")); // true
+
+// ------------------------ !(NOT)  ------------------------
+/* 
+The boolean NOT operator is represented with an exclamation sign ! .
+The syntax is pretty simple:
+
+result = !value;
+
+The operator accepts a single argument and does the following:
+1. Converts the operand to boolean type: true/false .
+2. Returns the inverse value.
+
+alert( !true ); // false
+alert( !0 ); // true
+*/
+
+
+// A double NOT !! is sometimes used for converting a value to boolean type:
+alert(!!"non-empty string"); // true
+alert(!!null); // false
 
 let arr = [1, 2, 3, 4];
 //console.log(arr, typeof arr);
@@ -54,7 +77,7 @@ console.log(string1, typeof string1);
 let number3 = parseFloat(string1);
 console.log(number3.toFixed(5), typeof number3);
 
-// Type coercion
+//-------------------Type coercion-------------------
 
 let myStr = `125`;
 let myNum = 225;
