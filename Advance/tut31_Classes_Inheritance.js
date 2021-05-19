@@ -7,6 +7,7 @@ class University {
     this.dept = dept;
     this.batch = batch;
   }
+
   static contact() {
     return `For queries\ncontact: ${this.contNum}\nEmail:${this.mail}`;
   }
@@ -18,6 +19,7 @@ class Student extends University {
     this.rollNo = rollNo;
     this.mail = mail;
   }
+
   welcome() {
     return `Congratulations ${this.stdName}, We welcome you in Department of ${
       this.uniName
@@ -25,12 +27,19 @@ class Student extends University {
       this.batch
     } and your ID is ${this.rollNo}.\n${University.contact()} `;
   }
+
   stdInfo() {
     return `Name: ${this.stdName}\nId: ${this.rollNo}\nDepartment: ${this.dept}\nBatch: ${this.batch}\nEmail: ${this.mail}`;
   }
 }
 
-let saeed = new Student(`Muhammad Saeed`, `18sw123`, `Software Eng`, 18,`mh.saeed.aq@gmail.com`);
+let saeed = new Student(
+  `Muhammad Saeed`,
+  `18sw123`,
+  `Software Eng`,
+  18,
+  `mh.saeed.aq@gmail.com`
+);
 console.log(saeed.welcome());
 console.log(saeed.stdInfo());
 console.log(University.contact());
@@ -38,4 +47,4 @@ console.log(University.contact());
 
 // 1. static methods can be used without creating objects.
 // 2. we can only use static variable inside static methods.
-// 3. create static methods and variable only for those things which will be common in all objects or for those which are independent of object. 
+// 3. create static methods and variable only for those things which will be common in all objects or for those which are independent of object.
