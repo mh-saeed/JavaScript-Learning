@@ -95,15 +95,27 @@ function showAllBooks() {
     <td>${book.name}</td>
     <td>${book.author}</td>
     <td>${book.category}</td>
+    <td><button type="button" class="btn btn-danger" onclick="deleteBooks(this.id)">Remove</button><td>
   </tr>`;
   });
-  console.log(booksObj);
   let booksElem = document.getElementById("tableBody");
   if (booksObj.length != 0) {
     booksElem.innerHTML = html;
   } else {
     booksElem.innerHTML = `<h6>Nothing to show !</h6>`;
   }
+}
+
+function deleteBooks(index) {
+  let collection = localStorage.getItem("collection");
+  if (collection == null) {
+    booksObj = [];
+  } else {
+    booksObj = JSON.parse(collection);
+  }
+  booksObj.splice(index, 1);
+  localStorage.setItem("collection", JSON.stringify(booksObj));
+  showAllBooks();
 }
 
 //Add submit event listener to AddBookButton
@@ -115,13 +127,11 @@ addBtn.addEventListener("click", (event) => {
   let bookAuthor = document.getElementById("bookAuthor");
   let bookCategory = document.getElementById("bookCategory");
   let book = new Book(bookName.value, bookAuthor.value, bookCategory.value);
-  console.log(book);
   let display = new Display(book);
 
   if (display.validate(book)) {
     display.addBooksToLocalStorage(book);
     showAllBooks();
-    // display.addToUI(book);
     display.clear();
     display.show("Success");
   } else {
@@ -129,4 +139,16 @@ addBtn.addEventListener("click", (event) => {
   }
 
   event.preventDefault();
+});
+
+let deleteButton = document.getElementById("DeleteBook");
+deleteButton.addEventListener("click", (event) => {
+  let input = confirm("Are you sure to delete all books?");
+  if (input === true) {
+    localStorage.clear();
+    showAllBooks();
+    event.preventDefault();
+  } else {
+    event.preventDefault();
+  }
 });
