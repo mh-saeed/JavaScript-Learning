@@ -17,17 +17,6 @@ function Book(name, author, category) {
 // Display Constructor
 function Display() {}
 
-//Add method to display prototype
-
-// Display.prototype.addToUI = function (book) {
-//   let bookTemplate = `<tr>
-//     <td>${book.name}</td>
-//     <td>${book.author}</td>
-//     <td>${book.category}</td>
-//   </tr>`;
-//   document.getElementById("tableBody").innerHTML += bookTemplate;
-// };
-
 // function to clear forms field after a successful entry
 
 Display.prototype.clear = function () {
@@ -51,7 +40,7 @@ Display.prototype.validate = function (book) {
 
 // function to add books in browser local storage
 
-function addBooksToLocalStorage(book) {
+Display.prototype.addBooksToLocalStorage = function (book) {
   let collection = localStorage.getItem("collection");
 
   if (collection == null) {
@@ -62,7 +51,7 @@ function addBooksToLocalStorage(book) {
 
   booksObj.push(book);
   localStorage.setItem("collection", JSON.stringify(booksObj));
-}
+};
 
 // function to show alert for successful and invalid operation
 
@@ -130,7 +119,7 @@ addBtn.addEventListener("click", (event) => {
   let display = new Display(book);
 
   if (display.validate(book)) {
-    addBooksToLocalStorage(book);
+    display.addBooksToLocalStorage(book);
     showAllBooks();
     // display.addToUI(book);
     display.clear();
